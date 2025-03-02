@@ -3,7 +3,6 @@
 #include <string>
 #include <iomanip>
 #include <iostream>
-#include "Array.tpp"
 
 template <class T>
 class Array
@@ -17,7 +16,6 @@ public:
     Array &operator=(const Array& assign);
     Array(unsigned int n);
     ~Array();
-    
     T& operator[](unsigned int index);
     const T& operator[](unsigned int index)const;
     unsigned int size()const;
