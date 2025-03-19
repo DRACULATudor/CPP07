@@ -3,6 +3,7 @@
 #include <string>
 #include <iomanip>
 #include <iostream>
+#include <stdexcept>
 
 template <class T>
 class Array

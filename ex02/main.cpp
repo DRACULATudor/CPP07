@@ -39,5 +39,18 @@ int main(void)
     {
         std::cerr << e.what() << '\n';
     }
+    Array<char> cha(2);
+    cha[0] = 'a';
+    cha[1] = 'b';
+    std::cout << "cha array elements are: " << cha[0] << ", " << cha[1] << std::endl;
+    std::cout << "size is: " << cha.size() << std::endl;
+    try
+    {
+        cha[-1] = 12; 
+    }
+    catch(const std::exception& e)
+    {
+        std::cerr << e.what() << '\n';
+    }
     return 0;
 }
